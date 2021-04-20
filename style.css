@@ -1,0 +1,162 @@
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap";
+body{
+    background-color: #646A53;
+}
+#hero {
+    height: 550px;
+}
+
+#hero .outer{
+    height: 550px;
+    padding: 20px;
+    background-color: #090c08;
+}
+
+#hero .inner{
+    height: 500px;
+    background-color: #646A53;
+    background: linear-gradient(to bottom, #646A53, #373839), url("./assets/img/4728289.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*dd1f68 COLOR PARA MARGENES*/
+#hero .inner:hover {
+    filter: contrast(80%);
+    background-blend-mode:hard-light;
+
+}
+
+#hero .title {
+    color: white;
+    font-size: 70px;
+    font-weight: lighter;
+    font-stretch:extra-expanded;
+    font-family: 'VT323';
+}
+
+#navbar {
+    background:#646A53;
+    height: 60px;
+    color: white;
+}
+
+#intro{
+    background-color: #646A53;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#intro .title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#intro .text {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#intro .social-link {
+    margin-top: 15px;
+}
+#intro .social-link span {
+    font-size: 14px;
+}
+
+#gallery {
+    background-color: #C6B6B0 ;
+    height: 900px;
+    color: white;
+    font-family: 'VT323';
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#gallery .h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#gallery .project{
+    text-decoration: none;
+}
+/*#gallery .project:active{
+    color: yellow;
+}
+#gallery .project:link{
+    color: yellowgreen;
+}
+#gallery .project:hover{
+    color: lightyellow;
+}
+#gallery .project:visited{
+    color: black;
+}*/
+
+
+#gallery {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#gallery h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/*quita el subrayado del link*/
+#gallery .project {
+    text-decoration: none;
+}
+/*si ya lo visitaste se muestra de ese color*/
+#gallery .project:visited {
+    color: black;
+}
+/*si está activo el enlace lo colorea*/
+#gallery .project:active {
+    color: black;
+}
+/*hover, aquí se pueden agregar las animaciones de animate.css*/
+#gallery .project:hover {
+    box-shadow:1px 1px 20px black;
+    padding-top: 1px;
+}
+
+#gallery .project img {
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .project .img-1 {
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+}
+
+#gallery .project .title {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#gallery .project .detail {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+#footer {
+    background:#646A53;
+    height: 200px;
+    color: white;
+    font-family: 'VT323';
+}
+
