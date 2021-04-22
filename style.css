@@ -32,6 +32,8 @@ body {
     color: white;
 }
 
+
+
 /* Hero */
 
 #hero {
@@ -60,6 +62,8 @@ body {
 
 #hero .inner:hover {
     background: linear-gradient(to bottom, #646A53, antiquewhite),url("./assets/img/4728289.jpg");
+    animation: headShake;
+    animation-duration: .5s;
 }
 
 #hero .title {
@@ -67,6 +71,31 @@ body {
     font-size: 70px;
 }
 
+h2 {
+    display: inline-block;
+    padding: .3em;
+    font-family: 'Megrim', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    user-select: none;
+    transform: translate(-50%,-50%);
+    color: rgba(255,255,255,.68);
+
+    font-size: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#canvas{
+    height: auto;
+    width:  100%;
+    padd
+}
 /* Intro */
 
 #intro {
@@ -113,12 +142,14 @@ body {
     color: black;
     font-family: 'Playfair Display', serif;
     background-color: #a5a58d;
+    border: #f0efeb 1px solid;
 }
 
 #gallery .project:hover {
     box-shadow: 1px 1px 5px #00000055;
-    animation: bounce;
+    animation: pulse;
     animation-duration: .5s;
+
 }
 
 /*
@@ -151,14 +182,19 @@ body {
 }
 
 #gallery .project .img-2 {
-    background-image: url(./assets/img/NETFLIX.gif);
-    background-repeat: no-repeat;
+    background-image: url(./assets/img/NETFLIX.png);
+}
 
+#gallery .project .img-2:hover {
+    background-image: url(./assets/img/NETFLIX.gif);
 }
 
 #gallery .project .img-3 {
+    background-image: url(./assets/img/JCR.png);
+}
+
+#gallery .project .img-3:hover {
     background-image: url(./assets/img/JCR.gif);
-    background-repeat: no-repeat;
 }
 
 #gallery .project .title {
@@ -187,18 +223,21 @@ body {
     background-color: #646A53;
     color: white;
     letter-spacing: .5px;
+    font-size: 30px;
 }
 
 #footer .logo {
     padding-left: 5%;
     font-size: 16px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 #footer .data {
     padding-left: 5%;
     font-size: 12px;
     font-family: 'Playfair Display', serif;
+    font-size: 15px;
 }
 
 #footer .data a {
