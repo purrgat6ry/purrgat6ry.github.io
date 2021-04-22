@@ -80,9 +80,9 @@ h2 {
     left: 50%;
     user-select: none;
     transform: translate(-50%,-50%);
-    color: rgba(255,255,255,.68);
+    color: #fdffb6;
 
-    font-size: 80px;
+    font-size: 67px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -91,10 +91,18 @@ h2 {
     align-items: center;
 
 }
+
+
 #canvas{
     height: auto;
     width:  100%;
-    padd
+
+}
+
+small {
+    font-size: 40px;
+    text-align: justify;
+    color: #646A53;
 }
 /* Intro */
 
