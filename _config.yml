@@ -1,2 +1,10 @@
-#Include Brave
-include: .well-known
+author: Mario B. Santana
+email: donmaoccio@icloud.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://donmaoccio.github.io/" # the base hostname & protocol for your site
+github_username:  donmaoccio
+
+# Build settings
+markdown: kramdown
+
+include: [".well-known"]
