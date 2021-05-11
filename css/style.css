@@ -71,6 +71,7 @@
 @media screen and (max-width:875px) {
     .navbar li.navbar_items {
         display: none;
+        padding-right: 30px;
     }
     .navbar li.icon {
         float: right;
@@ -78,6 +79,7 @@
         position: absolute;
         right: 0;
         top: 19px;
+        padding-right: 20px;
 
     }
 }
