@@ -1,247 +1,234 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
-    <link rel="stylesheet" href="./css/style.css">
-
-    <title>Mao</title>
-    <link rel="icon" href="./assets/img/logo.png">
-
-</head>
-
-
-<body>
-
-
-<div class="container-fluid">
-
-    <!--     nav bar -->
-    <div class="navbar">
-
-
-
-           <li class="logo" style="padding-left: 20px;padding-top: 10px "> <img src="assets/img/logo.png" height="58" width="60"> </li>
-
-            <section class="div_navbar_items">
-                <li class="navbar_items"> <a href="#canvas"> Home </a> </li>
-                <li class="navbar_items"> <a href="#intro"> About Me </a> </li>
-                <li class="navbar_items"> <a href="#gallery"> Projects </a> </li>
-                <li class="navbar_items"> <a href="#footer"> Contact </a> </li>
-            </section>
-
-            <li class="icon">
-                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));navBarFunction()" aria-label="Main Menu">
-                    <svg width="60" height="60" viewBox="0 0 100 100">
-                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                        <path class="line line2" d="M 20,50 H 80" />
-                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                    </svg>
-                    <!--<a id="icon" href="#" onclick="navBarFunction()"> &#9776;</a>-->
-            </li>
-        </ul>
-    </div>
-</div>
-<!--         closing navbar  -->
-
-
-
-<!-- Hero -->
-
-<canvas id="canvas" class="col-12 col-md-5 col-lg-3" ></canvas>
-<h2><strong>Mario B. Santana<br> <small>Developer</small></strong></h2>
-
-
-
-
-<!--HERO SECTION WITH IMAGE INSTEAD PARTICLES
-<div id="hero" class="row">
-    <div class="outer">
-        <div class="inner">
-            <p class="title">Mario B. Santana</p>
-        </div>
-    </div>
-</div>
-
-<!-- Intro -->
-
-<div id="intro" class="row">
-    <p class="title col-12">A Martial Artist's Journey to Mastering THE CODE.</p>
-    <p class="text col-12">Criminalistics and code enthusiast.</p>
-    <p class="text col-12">Currently working as IT manager, based in Manzanillo, México.</p>
-    <p class="text col-12">A human who likes cats, martial arts and technology.</p>
-    <p class="text col-12">Tiger Fist Disciple. Xing Yi Quan and JKD/VTK amateur.</p>
-
-    <!--<a href="mailto:donmaoccio@icloud.com" style="color: #210124">donmaoccio@icloud.com</a>
-
-    <a href="tel:+523121239455" style="color: #210124"> +52 312 123 9455</a>
-
-    <a href="https://taoshenkwoon.com/" style="color: #210124">donmaoccio@icloud.com</a>-->
-
-    </p>
-    <p class="text col-12">
-        Interested ? You can see my experience here:
-        </p>
-        <a href="./certificates/RESUMEBSMJ.pdf" target="_blank" style="color: #210124">
-            <i class="fas fa-file"></i>
-            <span style="font-weight:bold">CV</span>
-        </a>
-        <p>
-        <a href="./certificates/academic.pdf" target="_blank" style="color: #210124">
-            <i class="fas fa-certificate"></i>
-            <span style="font-weight:bold">Certificates</span>
-        </a>.
-    </p>
-    <p class="text col-18">
-        Find me at:
-    </p>
-
-    <a href="https://twitter.com/alleytopcat" target="_blank" class="col-10 col-md-5 col-lg-3 social-link" style="color: #210124">
-        <i class="fab fa-twitter"></i>
-        <span style="font-weight:bold">@alleytopcat</span>
-    </a>
-
-    <a href="https://www.instagram.com/alleytopcat" target="_blank" class="col-10 col-md-5 col-lg-3 social-link" style="color: #210124">
-        <i class="fab fa-instagram"></i>
-        <span style="font-weight:bold">@alleytopcat</span>
-    </a>
-
-    <a href="https://taoshenkwoon.com/" target="_blank" class="col-10 col-md-5 col-lg-3 social-link" style="color: #210124">
-        <i class="fas fa-yin-yang"></i>
-        <span style="font-weight:bold">/TaoShenKwoon Cultural Center</span>
-    </a>
-
-
-</div>
-</div>
-
-<!-- Gallery -->
-
-<div id="gallery" class="row">
-
-    <h1 style="font-weight:bold">Projects</h1>
-
-
-
-    <a
-            href="galleryindex.html"
-
-            class="project col-12 col-md-6 col-lg-4"
-    >
-        <div class="row pt-3">
-            <div class="col-12">
-                <div class="img img-1 col-12">
-                </div>
-                <p class="title col-12">
-                    Gallery
-                </p>
-                <p class="detail col-12">
-                    A reward for a lifetime's work.
-                </p>
-            </div>
-        </div>
-    </a>
-
-    <a
-            href="https://netflixmx-a59d4.web.app/"
-            target="_blank"
-            class="project col-12 col-md-6 col-lg-4"
-    >
-        <div class="row pt-3">
-            <div class="col-12">
-                <div class="img img-2 col-12">
-                </div>
-                <p class="title col-12">
-                    Netflix Clone
-                </p>
-                <p class="detail col-12">
-                    HTML/CSS website resembling Netflix landing page.
-                </p>
-            </div>
-        </div>
-    </a>
-
-    <a
-            href="http://www.agnajcr.com/"
-            target="_blank"
-            class="project col-12 col-md-6 col-lg-4"
-    >
-        <div class="row pt-3">
-            <div class="col-12">
-                <div class="img img-3 col-12">
-                </div>
-                <p class="title col-12">
-                    JCR
-                </p>
-                <p class="detail col-12">
-                    Agencia Naviera JCR Official Webpage: Ship Brokers and Maersk Line Agents from Manzanillo, Colima.
-                </p>
-            </div>
-        </div>
-    </a>
-
-</div>
-
-<!-- Footer -->
-
-<div id="footer" class="row">
-    <div class="logo col-10 col-md-5 col-lg-3">
-        <img src="assets/img/logo.png" height="58" width="60">
-        <p>Mario B. Santana</p>
-    </div>
-    <div class="data col-10 col-md-5 col-lg-3">
-        <a href="https://goo.gl/maps/f4K4uQPpyHhMUsdX6" target="_blank">Zlo,México</a>
-        <a href="mailto:donmaoccio@icloud.com" target="_blank">donmaoccio@icloud.com</a>
-        <a href="tel:+3121239455" target="_blank">+52 312 123 9455</a>
-        <br>
-        <br>
-
-    </div>
-
-    <div class="social col-10 col-md-5 col-lg-3">
-        <a href="https://twitter.com/alleytopcat" target="_blank" class="fab fa-twitter"></a>
-        <a href="https://www.linkedin.com/in/besmao/" target="_blank" class="fab fa-linkedin"></a>
-        <a href="https://www.instagram.com/alleytopcat" target="_blank" class="fab fa-instagram"></a>
-        <a href="https://github.com/donmaoccio" target="_blank" class="fab fa-github"></a>
-        <a href="https://www.freecodecamp.org/donmaoccio" target="_blank" class="fab fa-free-code-camp"></a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="copyright pt-5 col-12 text-center">
-        <p class="small tm-copyright-text" style="font-size: medium"> © <span class="tm-current-year">2021</span> Mario B. Santana/Mao All Rights Reserved.
-        </p>
-    </div>
-</div>
-
-<!-- dynamic viewport FAB-->
-
-</div>
-
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!DOCTYPE HTML>
 <!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<script src="https://kit.fontawesome.com/a9d0dc1506.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/canvas.js"></script>
-<script src="./js/scripts.js"></script>
 
-</body>
+
+<html>
+
+	<head>
+		<title style="font-family: 'Megrim', cursive">Mao</title>
+		<link rel="icon" href="./assets/css/images/logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+		<style>
+			div.clickEffect{
+				position:fixed;
+				box-sizing:border-box;
+				border-style:solid;
+				border-color:#D05586;
+				border-radius:50%;
+				animation:clickEffect 0.4s ease-out;
+				z-index:99999;
+			}
+			@keyframes clickEffect{
+				0%{
+					opacity:1;
+					width:0.5em; height:0.5em;
+					margin:-0.25em;
+					border-width:0.5rem;
+				}
+				100%{
+					opacity:0.2;
+					width:15em; height:15em;
+					margin:-7.5em;
+					border-width:0.03rem;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			function clickEffect(e){
+				var d=document.createElement("div");
+				d.className="clickEffect";
+				d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+				document.body.appendChild(d);
+				d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+			}
+			document.addEventListener('click',clickEffect);
+		</script>
+
+	</head>
+
+
+
+<div id="particles-js"></div>
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fas fa-home"><span>About Me</span></a>
+						<a href="#skills" class="icon solid fas fa-user"><span>Skills</span></a>
+						<a href="#work" class="icon solid fa-folder"><span style="font-weight: bold">Projects</span></a>
+						<a href="#contact" class="icon solid fas fa-address-book"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1 style="font-family: 'Megrim', cursive">Mario B. Santana</h1>
+									<p>Web Developer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<!--VAPORWAVE-->
+									<div class="vapor ">
+									</div>
+									<img class="catwave" src="./assets/css/images/logo.png"  alt="CatWave" />
+								</a>
+							</article>
+
+						<!--about me-->
+						<article id="skills" class="panel">
+							<header>
+								<h1 class="title col-12">A Martial Artist's Journey to Mastering THE CODE.</h1>
+								<p class="text col-12">Criminalistics and code enthusiast.</p>
+								<p class="text col-12">Currently working as IT manager, based in Manzanillo, México.</p>
+								<p class="text col-12">A human who likes cats, martial arts and technology.</p>
+								<p class="text col-12">Tiger Fist Disciple. Xing Yi Quan and JKD/VTK amateur.</p>
+
+								<p class="text col-12">
+									Interested ? You can see my experience here:
+								</p>
+								<a href="./certificates/RESUMEBSMJ.pdf" target="_blank" style="color: #210124">
+									<i class="fas fa-file"></i>
+									<span style="font-weight:bold">CV</span>
+								</a>
+								<p>
+									<a href="./certificates/academic.pdf" target="_blank" style="color: #210124">
+										<i class="fas fa-certificate"></i>
+										<span style="font-weight:bold">Certificates</span>
+									</a>.
+								</p>
+								<p class="text col-18">
+									Find me at:
+								</p>
+
+								<a href="https://twitter.com/alleytopcat" target="_blank" class="col-10 col-md-5 col-lg-3 social-link" style="color: #330033">
+									<i class="fab fa-twitter"></i>
+									<span style="font-weight:bold">@alleytopcat</span>
+								</a>
+
+								<a href="https://www.instagram.com/alleytopcat" target="_blank" class="col-10 col-md-5 col-lg-3 social-link" style="color: #330033">
+									<i class="fab fa-instagram"></i>
+									<span style="font-weight:bold">@alleytopcat</span>
+								</a>
+
+								<!--<a href="https://taoshenkwoon.com/" target="_blank" class="col-10 col-md-5 col-lg-3 social-link" style="color: #330033">
+									<i class="fas fa-yin-yang"></i>
+									<span style="font-weight:bold" >/TaoShenKwoon</span>
+								</a>-->
+							</header>
+						</article>
+
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Projects</h2>
+								</header>
+								<p>
+									A reward for a lifetime's work.
+								</p>
+								<section>
+
+									<div class="projects">
+
+										<a href="gallery.html" style="text-decoration: none" target="_blank">
+										<div class="card">
+											<img src="./assets/css/images/galleryimg.png" />
+											<h3>Gallery</h3>
+										</div>
+										</a>
+
+										<a href="https://netflixmx-a59d4.web.app/" style="text-decoration: none" target="_blank">
+										<div class="card">
+											<img src="./assets/css/images/NETFLIXH.png" />
+											<h3>Netflix Clon</h3>
+										</div>
+										</a>
+
+										<a href="http://www.agnajcr.com/" style="text-decoration: none" target="_blank">
+										<div class="card">
+											<img src="./assets/css/images/JCRH.png" />
+											<h3>Naviera JCR</h3>
+										</div>
+										</a>
+
+										<a href="https://maooldsite.web.app/" style="text-decoration: none" target="_blank">
+											<div class="card">
+												<img src="./assets/css/images/oldsite.png" />
+												<h3>Old Site</h3>
+											</div>
+										</a>
+
+									</div>
+
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<div class="logo col-10 col-md-5 col-lg-3">
+									<img src="./assets/css/images/logo.png" height="58" width="60">
+									<p>Mario B. Santana</p>
+								</div>
+								<div class="data col-10 col-md-2 col-lg-3">
+									<a href="https://goo.gl/maps/f4K4uQPpyHhMUsdX6" target="_blank">Zlo,México</a>
+									<a href="mailto:donmaoccio@icloud.com" target="_blank">donmaoccio@icloud.com</a>
+									<!--<a href="tel:+3121239455" target="_blank">+52 3121239455</a>-->
+									<br>
+									<br>
+
+								</div>
+
+								<div class="social col-10 col-md-5 col-lg-3">
+									<a href="https://twitter.com/alleytopcat" target="_blank" class="fab fa-twitter"></a>
+									<a href="https://www.linkedin.com/in/besmao/" target="_blank" class="fab fa-linkedin"></a>
+									<a href="https://www.instagram.com/alleytopcat" target="_blank" class="fab fa-instagram"></a>
+									<a href="https://github.com/donmaoccio" target="_blank" class="fab fa-github"></a>
+									<a href="https://www.freecodecamp.org/donmaoccio" target="_blank" class="fab fa-free-code-camp"></a>
+								</div>
+							</article>
+
+					</div>
+
+			</div>
+
+				<!-- Footer -->
+
+					<div id="footer">
+
+						<ul class="copyright" style="font-family:'Megrim', cursive; color: whitesmoke">
+							<li >&copy; Mario B. Santana | Mao All Rights Reserved.</li><li> </li>
+						</ul>
+					</div>
+
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	<!--Particles-->
+<script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+
+	</body>
+
 </html>
