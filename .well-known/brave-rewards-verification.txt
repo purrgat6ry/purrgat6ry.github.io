@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: donmaoccio.github.io
-Token: b38e486736c1342fb005b1e7319cf6e2b6cc5cdd52140a87a41f2d97e1af9a0d
+Domain: alleytopcat.github.io
+Token: 27eb511cd1610b53cf70e0d281cadcda1d750e90d28ddaa97d711a22dbddd048
